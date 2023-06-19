@@ -15,7 +15,7 @@ body {
 
 body, #header::before {
     /* Align background image for header (saturated) and sections (desaturated) vertically-bottom */
-    background-position: center bottom;
+    background-position: center 80%;
 }
 
 .homepage-section * {
