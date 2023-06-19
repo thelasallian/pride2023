@@ -31,31 +31,31 @@
     <div id="fullpage">
         <!-- Header -->
         <header class="section homepage-section" id="header">
-
+            <div class="container"><?php include_once 'php/modules/homepage/header.php'; ?></div>
         </header>
         <!-- Introduction -->
         <section class="section homepage-section" id="introduction">
-
+            <div class="container"><?php include_once 'php/modules/homepage/introduction.php'; ?></div>
         </section>
         <!-- Pride in Legislation -->
         <section class="section homepage-section" id="legislation">
-
+            <div class="container"><?php include_once 'php/modules/homepage/legislation.php'; ?></div>
         </section>
         <!-- Vox Populi -->
         <section class="section homepage-section" id="vox-populi">
-
+            <div class="container"><?php include_once 'php/modules/homepage/vox-populi.php'; ?></div>
         </section>
         <!-- Comic and Stories -->
         <section class="section homepage-section" id="comics-and-stories">
-
+            <div class="container"><?php include_once 'php/modules/homepage/comics-and-stories.php'; ?></div>
         </section>
         <!-- Articles -->
         <section class="section homepage-section" id="articles">
-
+            <div class="container"><?php include_once 'php/modules/homepage/articles.php'; ?></div>
         </section>
         <!-- Footer -->
         <footer class="section homepage-section" id="footer">
-
+            <div class="container"><?php include_once 'php/modules/homepage/footer.php'; ?></div>
         </footer>
     </div>
 
