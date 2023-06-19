@@ -9,10 +9,25 @@
     <!-- Webpage Title -->
     <!-- TODO: Replace with final special name -->
     <title>Pride Special Title - The LaSallian</title>
+
+    <!-- Full Page JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+
+    <!-- Bootstrap -->
 </head>
 
 <body>
 
+
+    <!-- Full Page JS -->
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true
+        });
+    </script>
 </body>
 
 </html>
