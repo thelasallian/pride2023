@@ -28,14 +28,44 @@
 </head>
 
 <body>
+    <div id="fullpage">
+        <!-- Header -->
+        <header class="section homepage-section" id="header">
 
+        </header>
+        <!-- Introduction -->
+        <section class="section homepage-section" id="introduction">
+
+        </section>
+        <!-- Pride in Legislation -->
+        <section class="section homepage-section" id="legislation">
+
+        </section>
+        <!-- Vox Populi -->
+        <section class="section homepage-section" id="vox-populi">
+
+        </section>
+        <!-- Comic and Stories -->
+        <section class="section homepage-section" id="comics-and-stories">
+
+        </section>
+        <!-- Articles -->
+        <section class="section homepage-section" id="articles">
+
+        </section>
+        <!-- Footer -->
+        <footer class="section homepage-section" id="footer">
+
+        </footer>
+    </div>
 
     <!-- Full Page JS -->
     <script>
         new fullpage('#fullpage', {
             //options here
             autoScrolling:true,
-            scrollHorizontally: true
+            scrollHorizontally: true,
+            css3:false,
         });
     </script>
 

@@ -1,0 +1,77 @@
+.fp-watermark {
+    opacity: 0; /* Hide default fullPage.js watermark */
+}
+
+html {
+    background-color: #fff; /* Hack. On some browsers, blend mode won't work unless HTML element has a background-color */
+}
+
+body {
+    /* Fixed desaturated background-image below all sections */
+    background-image: url('../assets/backgrounds/Desaturated-LS-LGBT-Flags-Sonsing.PNG');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body, #header::before {
+    /* Align background image for header (saturated) and sections (desaturated) vertically-bottom */
+    background-position: center bottom;
+}
+
+.homepage-section * {
+    z-index: 5; /* Ensure that text and images appear above the color overlay */
+}
+
+.homepage-section {
+    position: relative; /* Allows color overlay pseudo-element to be positioned properly */
+}
+
+.homepage-section::after {
+    /* Transparent white overlay below the color overlay to aid in text readability */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: ' ';
+    background-color: rgba(255, 255, 255, 0.60);
+}
+
+/* Overlay above sections */
+.homepage-section::before {
+    /* Common properties regardless of color overlay */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    content: ' ';
+    mix-blend-mode: multiply;
+}
+
+/* Note: The elements identified by ID below also have the class .homepage-section */
+
+#introduction::before { background-color: #C93852; }
+#legislation::before { background-color: #CC662D; }
+#vox-populi::before { background-color: #E59E32; }
+#comics-and-stories::before { background-color: #3F9758; }
+#articles::before { background-color: #3553A0; }
+#footer::before { background-color: #7D3B9C; }
+
+/* Separate rules for header */
+
+/* Header */
+#header::before {
+    background-image: url('../assets/backgrounds/LS-LGBT-Flags-Sonsing.PNG');
+    background-size: cover;
+    background-attachment: fixed;
+    mix-blend-mode: normal;
+}
+
+#header::after {
+    z-index: 3;
+    background: linear-gradient(40.06deg, rgba(36, 20, 100, 0.81) 25%, rgba(255, 255, 255, 0) 71.31%);
+    background-attachment: fixed;
+}
